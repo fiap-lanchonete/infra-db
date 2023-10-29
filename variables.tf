@@ -30,7 +30,7 @@ variable "username" {
 
 variable "password" {
   description = "password of the database"
-  default = "password"
+  sensitive = true
   type = string
 }
 
