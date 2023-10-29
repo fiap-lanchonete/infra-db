@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_db_instance" "default" {
-  db_name = "teste"
+  db_name = var.db_name
   allocated_storage = var.allocated_storage
   storage_type = var.storage_type
   engine = var.engine

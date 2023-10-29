@@ -4,6 +4,12 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
+variable "db_name" {
+  description = "Name of the database"
+  type = string
+  default = "lanchonete-db"
+}
+
 variable "engine" {
   description = "The database engine"
   type = string
